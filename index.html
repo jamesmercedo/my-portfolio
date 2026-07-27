@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HM Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Portfolio</a>
+            <nav class="nav">
+                <a href="#works">works</a>
+                <a href="#about">about</a>
+                <a href="#contact">contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <h1>はじめまして、HMです。</h1>
+            <p>デザインを学び始めて半年になります。<br>Webデザインを中心に、バナーやロゴの制作を練習しています。</p>
+            <div class="hero-buttons">
+                <a href="#works" class="btn btn-primary">制作物を見る</a>
+                <a href="#contact" class="btn btn-secondary">お問い合わせ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="works">
+        <div class="container">
+            <h2 class="section-title">works</h2>
+            <div class="grid">
+
+                <!-- Work Item 1 -->
+                <div class="card">
+                    <!-- 修正：divタグからimgタグに変更 -->
+                    <img src="espresso-lane.jpg" alt="Espresso Laneのモックアップ" class="card-img">
+                    <div class="card-content">
+                        <span class="category">Website Web Design</span>
+                        <h3>Espresso Lane</h3>
+                        <p>地域のカフェ向けに制作した架空のランディングページ。シンプルな情報設計と写真の配置を意識しました。</p>
+                    </div>
+                </div>
+
+                <!-- Work Item 2 -->
+                <div class="card">
+                    <!-- 修正：divタグからimgタグに変更 -->
+                    <img src="aqua-leaf.jpg" alt="Aqua Leaf Hairのモックアップ" class="card-img">
+                    <div class="card-content">
+                        <span class="category">Website Web Design</span>
+                        <h3>Aqua Leaf Hair</h3>
+                        <p>ローカルの架空のビューティーサロンランディングページ。白を基調としたモノトーンデザイン。</p>
+                    </div>
+                </div>
+
+                <!-- Work Item 3 -->
+                <div class="card">
+                    <!-- 修正：divタグからimgタグに変更 -->
+                    <img src="banner.airline.jpg" alt="旅行会社の社員募集バナー" class="card-img">
+                    <div class="card-content">
+                        <span class="category">Web / Banner</span>
+                        <h3>Banner</h3>
+                        <p>架空の旅行会社の社員募集を想定した横型バナー。視認性と情報の優先順位を考えて配置しました。</p>
+                    </div>
+                </div>
+
+                <!-- Work Item 4 -->
+                <div class="card">
+                    <!-- 修正：divタグからimgタグに変更、不要な重複ディブを削除 -->
+                    <img src="MORI-FARM2.png" alt="農場のロゴデザイン" class="card-img">
+                    <div class="card-content">
+                        <span class="category">Logo</span>
+                        <h3>Logo</h3>
+                        <p>架空の農場をイメージしたロゴ。シンプルな幾何学形と文字の組み合わせ。</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-container">
+            <h2 class="section-title">About</h2>
+            <p>デザイン教員を３０年、コールセンターを１３年現在Webクリエーター養成の職業訓練生です。主にFigma、Photoshop, それとIllustratorを使ってWebデザインを学んでいます。</p>
+            <p>インスピレーションは絶え間なくありデザインのイメージも泉のようにわいてきます。</p>
+
+            <h3 class="skills-title">Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-item"><span>Figma</span><span>70%</span></div>
+                <div class="skill-item">
+                    <div class="bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item"><span>HTML / CSS</span><span>65%</span></div>
+                <div class="skill-item">
+                    <div class="bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item"><span>Photoshop</span><span>55%</span></div>
+                <div class="skill-item">
+                    <div class="bar">
+                        <div class="progress" style="width: 55%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item"><span>Illustrator</span><span>50%</span></div>
+                <div class="skill-item">
+                    <div class="bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item"><span>PHP　JavaScript</span><span>50%</span></div>
+                <div class="skill-item">
+                    <div class="bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container form-container">
+            <h2 class="section-title">Contact</h2>
+            <p class="contact-text">お仕事のご相談、ご質問などお気軽にどうぞ。</p>
+
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn">送信する</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
